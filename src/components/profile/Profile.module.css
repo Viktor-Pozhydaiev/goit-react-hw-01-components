@@ -1,0 +1,38 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.description {
+  background: darkgray;
+}
+.name {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+.tag {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.location {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.stats {
+  background: dimgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 470px;
+  height: 100px;
+}
+.stats li {
+  width: 80px;
+}
+.label {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.quantity {
+  font-weight: 700;
+}
