@@ -1,0 +1,26 @@
+.statistics {
+  margin: 0 auto;
+  text-align: center;
+  width: 400px;
+}
+.title {
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid;
+  border-color: green;
+  background: green;
+}
+.statList {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  background: blueviolet;
+  border: 1px solid;
+}
+.item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+}
