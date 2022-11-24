@@ -10,23 +10,27 @@ export const Transactions = ({ items }) => {
           <th>Amount</th>
           <th>Currency</th>
         </tr>
-        {items.map(items => (
-          <tbody key={items.id}>
-            <tr>
-              <td>{items.type}</td>
-              <td>{items.amount}</td>
-              <td>{items.currency}</td>
-            </tr>
-          </tbody>
-        ))}
       </thead>
+      {items.map(items => (
+        <tbody key={items.id}>
+          <tr>
+            <td>{items.type}</td>
+            <td>{items.amount}</td>
+            <td>{items.currency}</td>
+          </tr>
+        </tbody>
+      ))}
     </table>
   );
 };
 
 Transactions.propTypes = {
-  id: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  amount: PropTypes.string.isRequired,
-  currency: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
+    })
+  ),
 };
