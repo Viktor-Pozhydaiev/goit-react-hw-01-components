@@ -30,8 +30,17 @@ export const Profile = ({ username, avatar, location, tag, stats }) => {
 };
 
 Profile.propTypes = {
-  username: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  stats: PropTypes.object.isRequired,
+  user: PropTypes.arrayOf(
+    PropTypes.exact({
+      avatar: PropTypes.symbol.isRequired,
+      username: PropTypes.string.isRequired,
+      location: PropTypes.string.isRequired,
+      tag: PropTypes.string.isRequired,
+      stats: {
+        followers: PropTypes.number.isRequired,
+        views: PropTypes.number.isRequired,
+        likes: PropTypes.number.isRequired,
+      },
+    })
+  ),
 };
