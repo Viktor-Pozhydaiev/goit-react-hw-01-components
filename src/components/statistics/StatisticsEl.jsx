@@ -1,4 +1,4 @@
-import css from '../Statistics/Statistics.module.css';
+import css from '../statistics/Statistics.module.css';
 
 export const StatisticsEl = ({ label, percentage }) => {
   return (

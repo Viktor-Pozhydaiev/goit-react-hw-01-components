@@ -1,4 +1,4 @@
-import css from '../FriendsList/Friends.module.css';
+import css from '../friendsList/Friends.module.css';
 import { PropTypes } from 'prop-types';
 
 export const FriendsListItem = ({ avatar, name, isOnline }) => {
